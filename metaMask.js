@@ -25,8 +25,8 @@ window.addEventListener('load', async () => {
   //console.log (window.web3.currentProvider)
 
 
-const oldTokenAddress = "0x9D2FA7fcB95e1eef886B028bfDC1cbEd58015931";
-const newTokenAddress = "0x02C961E2776d34203dD54c62E6126418662af637";
+const oldTokenAddress = "0x1fe72034da777ef22533eaa6dd7cbe1d80be50fa";
+const newTokenAddress = "0xd234bE7943094c3c9A2816Dd660d2BA720e93977";
 const netWorkId = "https://ropsten.etherscan.io/tx/"
 
 async function callCheck(){
@@ -40,21 +40,21 @@ async function callCheck(){
         payAcceptAbi,
         newTokenAddress
     );
-    
+
     let a = await window.oldToken.methods.balanceOf(address[0]).call();
-    
+
     if(Number(a) === 0){
         $("#loaderDiv").html('<p class="text"> You dont have old Token </p>');
     }else{
 
         let b = await window.oldToken.methods.allowance(address[0],newTokenAddress).call();
         if(Number(b) >= Number(a)){
-            $("#loaderDiv").html('<p class="text"> Swap with new Token </p> <button onclick="swap()" class="btn btn-blue"> Swap Token</button>');        
+            $("#loaderDiv").html('<p class="text"> Swap with new Token </p> <button onclick="swap()" class="btn btn-blue"> Swap Token</button>');
         }else{
             $("#loaderDiv").html('<p class="text">Approving OldToken For Swap</p> <button onclick="approve()" class="btn btn-blue"> Approve Token</button>');
         }
     }
-    
+
 }
 
 async function approve(){
