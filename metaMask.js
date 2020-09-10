@@ -26,7 +26,7 @@ window.addEventListener('load', async () => {
 
 
 const oldTokenAddress = "0x1fe72034da777ef22533eaa6dd7cbe1d80be50fa";
-const newTokenAddress = "0xd234bE7943094c3c9A2816Dd660d2BA720e93977";
+const newTokenAddress = "0xCA221f84433Caa091349e4e11f18437c1734e0f7";
 const netWorkId = "https://ropsten.etherscan.io/tx/"
 
 async function callCheck(){
