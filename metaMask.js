@@ -26,8 +26,8 @@ window.addEventListener('load', async () => {
 
 
 const oldTokenAddress = "0x1fe72034da777ef22533eaa6dd7cbe1d80be50fa";
-const newTokenAddress = "0xCA221f84433Caa091349e4e11f18437c1734e0f7";
-const netWorkId = "https://ropsten.etherscan.io/tx/"
+const newTokenAddress = "0x8EF47555856f6Ce2E0cd7C36AeF4FAb317d2e2E2";
+const netWorkId = "https://etherscan.io/tx/"
 
 async function callCheck(){
     let address = await window.web3.eth.getAccounts();
@@ -44,14 +44,14 @@ async function callCheck(){
     let a = await window.oldToken.methods.balanceOf(address[0]).call();
 
     if(Number(a) === 0){
-        $("#loaderDiv").html('<p class="text"> You dont have old Token </p>');
+        $("#loaderDiv").html('<p class="text"> You don\'t have PAY tokens </p>');
     }else{
 
         let b = await window.oldToken.methods.allowance(address[0],newTokenAddress).call();
         if(Number(b) >= Number(a)){
-            $("#loaderDiv").html('<p class="text"> Swap with new Token </p> <button onclick="swap()" class="btn btn-blue"> Swap Token</button>');
+            $("#loaderDiv").html('<p class="text">Swap with new PAYT Token </p> <button onclick="swap()" class="btn btn-blue"> Swap Token</button>');
         }else{
-            $("#loaderDiv").html('<p class="text">Approving OldToken For Swap</p> <button onclick="approve()" class="btn btn-blue"> Approve Token</button>');
+            $("#loaderDiv").html('<p class="text">Approving old PAY For Swap</p> <button onclick="approve()" class="btn btn-blue"> Approve Token</button>');
         }
     }
 
@@ -68,9 +68,9 @@ async function approve(){
         value: 0,
     }).on('transactionHash', (hash) => {
         var url = netWorkId+hash;
-        $("#loaderDiv").html('<p class="text"> <i class="fas fa-spinner fa-spin fa-3x"></i></br></br>Approving Old Token To Swap .. <br/> <a href='+url+' target="_blank" >check transaction status</a></span>');
+        $("#loaderDiv").html('<p class="text"> <i class="fas fa-spinner fa-spin fa-3x"></i></br></br>Approving Old PAY Token To Swap .. <br/> <a href='+url+' target="_blank" >check transaction status</a></span>');
     }).on('receipt', (receipt) => {
-        $("#loaderDiv").html('<p class="text"> Swap with new Token </p> <button onclick="swap()" class="btn btn-blue"> Swap Token </button>');
+        $("#loaderDiv").html('<p class="text"> Swap with new PAYT Token </p> <button onclick="swap()" class="btn btn-blue"> Swap Token </button>');
     }).on("error", (error) => {
         alert("Error In approving");
     })
@@ -88,7 +88,7 @@ async function swap(){
         value: 0,
     }).on('transactionHash', (hash) => {
         var url = netWorkId+hash;
-        $("#loaderDiv").html('<p class="text"> <i class="fas fa-spinner fa-spin fa-3x"></i></br></br>Swapping Old Token .. <br/> <a href='+url+' target="_blank" >check transaction status</a></p>');
+        $("#loaderDiv").html('<p class="text"> <i class="fas fa-spinner fa-spin fa-3x"></i></br></br>Swapping in progress.. <br/> <a href='+url+' target="_blank" >check transaction status</a></p>');
     }).on('receipt', (receipt) => {
         $("#loaderDiv").html('<p class="text"> <i class="fas fa-thumbs-up fa-3x"></i></br></br>Swap Is Done</p>');
     }).on("error", (error) => {
