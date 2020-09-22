@@ -20,9 +20,12 @@ $realm = 'Restricted area';
 //user => password
 $users = array(
         'admin' => 'admin3333',
-        'guest' => 'guest',
         'victor' => 'victor123',
         'mark' => 'buzbee',
+        'ben' => 'jones',
+        'yogi' => 'kadam',
+        'marcus' => 'kleuser',
+
 
 
 );
