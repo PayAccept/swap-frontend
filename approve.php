@@ -25,6 +25,11 @@ $users = array(
         'ben' => 'jones',
         'yogi' => 'kadam',
         'marcus' => 'kleuser',
+        'oscar' => 'paz27',
+        'emrah' => 'davsan',
+        'rob' => 'dekort',
+        'wesley' => 'vanhoorn',
+        'sylvain' => 'girard',
 
 
 
