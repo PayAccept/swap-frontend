@@ -30,6 +30,14 @@ $users = array(
         'rob' => 'dekort',
         'wesley' => 'vanhoorn',
         'sylvain' => 'girard',
+        'david' => 'startz',
+        'arqum' => 'acoih',
+        'tim' => 'spooner',
+        'crypto' => '2000',
+        'william' => 'purcell',
+        'archit' => 'srivastava',
+        'alex' => 'foster',
+        'luke' => 'james',
 
 
 
