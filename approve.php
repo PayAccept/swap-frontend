@@ -48,6 +48,10 @@ $users = array(
     'mukhtar' => 'ahmed',
     'sadik' => 'karakas',
     'gosia' => 'kowalski',
+    'marc' => 'peterson',
+    'kim' => 'harold',
+    'tobias' => 'aeberhard',
+    'lukasz' => 'trybulec'
 
 
 
