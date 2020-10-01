@@ -20,31 +20,23 @@ $realm = 'Restricted area';
 //user => password
 $users = array(
     'admin' => 'admin3333',
-    'victor' => 'victor123',
-    'mark' => 'buzbee',
+    'chien' => 'nguyen',
+    'kai' => 'groth',
+    'fahad' => 'choudhry',
+    'mathias' => 'twerdy',
+    'mat' => 'moon',
+    'antonio' => 'cavazos',
+    'webster' => 'shaw',
+    'ezekiel' => 'ezekiel',
+    'aditya' => 'aditya',
+    'danny' => 'uffner',
+    'lou' => 'mcneil',
+    'firras' => 'sabbah',
+    'benoit' => 'claf',
+    'mihailo' => 'hegedis',
+    'sadik' => 'karakas',
     'ben' => 'jones',
-    'marcus' => 'kleuser',
-    'rob' => 'dekort',
-    'wesley' => 'vanhoorn',
-    'sylvain' => 'girard',
-    'david' => 'startz',
-    'tim' => 'spooner',
-    'william' => 'purcell',
-    'archit' => 'srivastava',
-    'alex' => 'foster',
-    'anurag' => 'saikia',
-    'louis' => 'thom',
-    'robert' => 'klumpenaar',
-    'roelof' => 'nuesink',
-    'matthew' => 'hawkins',
-    'marc' => 'peterson',
-    'tobias' => 'aeberhard',
-    'probit' => 'probit1234',
-    'bilaxy' => 'bilaxy1999',
-    'joep' => 'joep2020'
-
-
-
+    'isr' => 'channel'
 );
 
 
