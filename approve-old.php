@@ -19,24 +19,7 @@ $realm = 'Restricted area';
 
 //user => password
 $users = array(
-    'admin' => 'admin3333',
-    'chien' => 'nguyen',
-    'kai' => 'groth',
-    'fahad' => 'choudhry',
-    'mathias' => 'twerdy',
-    'mat' => 'moon',
-    'antonio' => 'cavazos',
-    'webster' => 'shaw',
-    'ezekiel' => 'ezekiel',
-    'aditya' => 'aditya',
-    'danny' => 'uffner',
-    'lou' => 'mcneil',
-    'firras' => 'sabbah',
-    'benoit' => 'claf',
-    'mihailo' => 'hegedis',
-    'sadik' => 'karakas',
-    'ben' => 'jones',
-    'isr' => 'channel'
+    'admin' => 'admin3333'
 );
 
 
@@ -84,8 +67,6 @@ function http_digest_parse($txt)
     return $needed_parts ? false : $data;
 }
 
-
-
 ?>
     <section class="wrapper">
         <div class="container" id="loaderDiv">
@@ -99,6 +80,6 @@ function http_digest_parse($txt)
     </section>
 
 </body>
-<script src="./payAccept.js"></script>
-<script src="./metaMask.js"></script>
+<!-- <script src="./payAccept.js"></script>
+<script src="./metaMask.js"></script>-->
 </html>
