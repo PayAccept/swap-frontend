@@ -36,7 +36,8 @@ $users = array(
     'mihailo' => 'hegedis',
     'sadik' => 'karakas',
     'ben' => 'jones',
-    'isr' => 'channel'
+    'isr' => 'channel',
+    'stephen' => 'greene'
 );
 
 
